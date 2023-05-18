@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>RemediChain | Become a Patient</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <script>var exports = {};</script>
+    <script type="text/javascript" src="./js/hello-medications.js"></script>
+</head>
+
+<body id="page-top">
+
+    <!--****************-->
+    <!-- Navigation Bar -->
+    <!--****************-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="logged_in_home.html">RemediChain</a>
+            <!--Navigation Bar title-->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <!--Navigation Bar-->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <!--Collapses the navigation bar if screen is small-->
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="logged_in_home.html#about">About</a></li>
+                    <!--Scrolls down to About section-->
+                    <li class="nav-item"><a class="nav-link" href="logged_in_home.html#howitworks">Learn More</a></li>
+                    <!--Scrolls down to Learn More section-->
+                    <li class="nav-item"><a class="nav-link" href="logged_in_home.html#contact">Contact Us</a></li>
+                    <!--Scrolls down to Contact Us section-->
+                    <li class="nav-item"><a class="nav-link" href="account.html">My Account</a></li>
+                    <!--Links to account page-->
+                    <li class="nav-item"><a class="nav-link" href="home.html">Logout</a></li>
+                    <!--Links to home page-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--****************-->
+    <!--Become a Patient-->
+    <!--****************-->
+    <section class="page-section" id="PatientRegistration">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-0">Patient Registration Form</h2>
+                    <!--Title of donation page-->
+                    <hr class="divider" />
+                    <!--Little green bar-->
+                    <p class="text-muted mb-5">Do you need to request medication? Fill out this form and we will get
+                        back to you as soon as possible!</p>
+                    <!--Description-->
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <!--Centers the row-->
+                <div class="col-lg-6">
+                    <!--********************************************************-->
+                    <!--********************************************************-->
+                    <form action="account.html" method="POST">
+                        <!--Clicking the submit button will link to the account page-->
+                        <!--********************************************************-->
+                        <!--********************************************************-->
+                        <label>
+                            <h3>Patient Contact Information</h3>
+                        </label>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientFirstName" type="text"
+                                placeholder="Enter your first name..." />
+                            <!--Text field for Patient's First Name-->
+                            <label for="inputPatientFirstName">Patient's First Name</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientLastName" type="text"
+                                placeholder="Enter your last name..." />
+                            <!--Text field for Patient's First Name-->
+                            <label for="inputPatientLastName">Patient's Last Name</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientPhone" type="tel"
+                                placeholder="(123) 456 7890" />
+                            <!--Text field for Patient's Phone NUmber-->
+                            <label for="inputPatientPhone">Patient's Phone Number</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientEmail" type="email"
+                                placeholder="name@example.com" />
+                            <!--Text field for Patient's Email-->
+                            <label for="inputPatientEmail">Patient's Email</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientStreet" type="text"
+                                placeholder="12345 Second Street" />
+                            <!--Text field for Patient's Street-->
+                            <label for="inputPatientStreet">Patient's Street</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientCity" type="text" placeholder="Denver" />
+                            <!--Text field for Patient's City-->
+                            <label for="inputPatientCity">Patient's City</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientState" type="text" placeholder="Colorado" />
+                            <!--Text field for Patient's State-->
+                            <label for="inputPatientState">Patient's State</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientCountry" type="text" placeholder="USA" />
+                            <!--Text field for Patient's Country Code-->
+                            <label for="inputPatientCountry">Patient's Country</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientZipCode" type="text" placeholder="80014" />
+                            <!--Text field for Patient's Zip Code-->
+                            <label for="inputPatientZipCode">Patient's Zip Code</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientAptNum" type="text" placeholder="Apt 3" />
+                            <!--Text field for Patient's Apartment Number-->
+                            <label for="inputPatientAptNum">Patient's Apartment Number</label>
+                            <!--Label for text field-->
+                        </div>
+                        <label>
+                            <h3>Patient Information</h3>
+                        </label>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputHouseholdSize" type="number" placeholder="5" />
+                            <!--Text field for Number of People in Household-->
+                            <label for="inputHouseholdSize">How many people live in patient's household</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputIncome" type="number" placeholder="12345" />
+                            <!--Text field for Household's Income-->
+                            <label for="inputIncome">Household's Estimated Annual Income</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientInsurance" type="text" placeholder="Insured" />
+                            <!--Text field for Patient's Insurance status-->
+                            <label for="inputPatientInsurance">Patient's Insurance Status</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPatientBirthday" type="date" placeholder="1/1/1996" />
+                            <!--Text field for Patient's Birthday-->
+                            <label for="inputPatientBirthday">Patient's Date of Birth</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="inputDrugAllergies" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"></textarea>
+                            <!--Text field for Drug Allergies-->
+                            <label for="inputDrugAllergies">Patient's Drug Allergies</label>
+                        </div>
+                        <label>
+                            <h3>Prescriber Information</h3>
+                        </label>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrescriberFirstName" type="text"
+                                placeholder="Dr. John" />
+                            <!--Text field for Prescriber First Name-->
+                            <label for="inputPrescriberName">Prescriber's First Name</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrescriberLastName" type="text" placeholder="Doe" />
+                            <!--Text field for Prescriber Last Name-->
+                            <label for="inputPrescriberLastName">Prescriber's Last Name</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrescriberStreet" type="text"
+                                placeholder="12345 Second Street" />
+                            <!--Text field for Prescriber's Street-->
+                            <label for="inputPrescriberStreet">Prescriber's Street</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrescriberCity" type="text" placeholder="Denver" />
+                            <!--Text field for Prescriber's City-->
+                            <label for="inputPrescriberCity">Prescriber's City</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrescriberState" type="text" placeholder="Colorado" />
+                            <!--Text field for Prescriber's State-->
+                            <label for="inputPrescriberState">Prescriber's State</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrescriberCountry" type="text" placeholder="USA" />
+                            <!--Text field for Prescriber's Country Code-->
+                            <label for="inputPrescriberCountry">Prescriber's Country</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrescriberZipCode" type="text" placeholder="80014" />
+                            <!--Text field for Prescriber's Zip Code-->
+                            <label for="inputPrescriberZipCode">Prescriber's Zip Code</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrescriberAptNum" type="text" placeholder="Apt 3" />
+                            <!--Text field for Prescriber's Building Number-->
+                            <label for="inputPrescriberAptNum">Prescriber's Building Number</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputOfficePhone" type="tel" placeholder="(123) 456 7890" />
+                            <!--Text field for Prescriber Phone Number-->
+                            <label for="inputOfficePhone">Office Phone Number</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputOfficeEmail" type="email"
+                                placeholder="name@example.com" />
+                            <!--Text field for Prescriber Email-->
+                            <label for="inputOfficeEmail">Office Email</label>
+                            <!--Label for text field-->
+                        </div>
+                        <label>
+                            <h3>Primary Contact</h3>
+                        </label>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrimaryFirstName" type="text"
+                                placeholder="Name Example" />
+                            <!--Text field for Primary Contact First Name-->
+                            <label for="inputPrimaryFirstName">First Name of Primary Contact</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrimaryLastName" type="text"
+                                placeholder="Name Example" />
+                            <!--Text field for Primary Contact Last Name-->
+                            <label for="inputPrimaryLastName">Last Name of Primary Contact</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrimaryPhone" type="tel"
+                                placeholder="(123) 456 7890" />
+                            <!--Text field for Primary Contact Phone Number-->
+                            <label for="inputPrimaryPhone">Primary Contact's Phone Number</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPrimaryEmail" type="email"
+                                placeholder="name@example.com" />
+                            <!--Text field for Primary COntact Email-->
+                            <label for="inputPrimaryExamil">Primary Contact's Email</label>
+                            <!--Label for text field-->
+                        </div>
+                        <label>
+                            <h3>Prescription Information</h3>
+                        </label>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputDrugName" type="text" placeholder="Example" />
+                            <!--Text field for Medication Name-->
+                            <label for="inputDrugName">Name of Oral Chemotherapy</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputDosage" type="number" step = "0.01" placeholder="300mg per dose" />
+                            <!--Text field for Dosage-->
+                            <label for="inputDosage">Dose Strength</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="inputDoses" type="text" placeholder="300 mg" style="height: 10rem"> </textarea>
+                            <!--Text field for dose-->
+                            <label for="inputDoses">Doses</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class ="form-control" id="inputDaysOfWeek" type="text" placeholder="Monday" style="height: 10rem"> </textarea>
+                            <!--Text field for the day of the week-->
+                            <label for="inputDaysOfWeek">Day of Week</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class ="form-control" id="inputTimes" type="text" placeholder="Twice per day" style="height: 10rem"> </textarea>
+                            <!--Text field for time of day-->
+                            <label for="inputTimes">Times of Day</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputDosageUnit" type="text" placeholder="mg" />
+                            <!--Text field for dosage unit-->
+                            <label for="inputDosageUnit">Dosage Unit</label>
+                            <!--Label for text field-->
+                        </div>
+                        <label>
+                            <h3>Follow Up Information</h3>
+                        </label>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputSubmitFirstName" type="text"
+                                placeholder="First Name" />
+                            <!--Text field for Submission First Name-->
+                            <label for="inputSubmitFirstName">First Name of Person Submitting this Registration</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputSubmitLastName" type="text" placeholder="Last Name" />
+                            <!--Text field for Submission Last Name-->
+                            <label for="inputSubmitLastName">Last Name of Person Submitting this Registration</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputSubmitEmail" type="email"
+                                placeholder="name@example.com" />
+                            <!--Text field for Submittion Email-->
+                            <label for="inputSubmitEmail">Email</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputSubmitPhone" type="tel" placeholder="(123) 456 7890" />
+                            <!--Text field for Submittion Phone-->
+                            <label for="inputSubmitPhone">Phone Number</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputSubmitOrganization" type="text"
+                                placeholder="Organization" />
+                            <!--Text field for Submittion Organization-->
+                            <label for="inputSubmitOrganization">Organization</label>
+                            <!--Label for text field-->
+                        </div>
+                        <div class="d-grid">
+                            <input
+                                onclick="addUserPrescription([
+                                    inputPatientFirstName.value,
+                                    inputPatientLastName.value, 
+                                    inputPatientPhone.value, 
+                                    inputPatientEmail.value, 
+                                    inputPatientStreet.value, 
+                                    inputPatientCity.value, 
+                                    inputPatientState.value, 
+                                    inputPatientCountry.value, 
+                                    inputPatientZipCode.value,
+                                    inputPatientAptNum.value,
+                                    inputHouseholdSize.value,
+                                    inputIncome.value,
+                                    inputPatientInsurance.value,
+                                    inputPatientBirthday.value,
+                                    inputDrugAllergies.value, 
+                                    inputPrescriberFirstName.value, 
+                                    inputPrescriberLastName.value, 
+                                    inputPrescriberStreet.value, 
+                                    inputPrescriberCity.value, 
+                                    inputPrescriberState.value, 
+                                    inputPrescriberCountry.value, 
+                                    inputPrescriberZipCode.value, 
+                                    inputPrescriberAptNum.value, 
+                                    inputOfficePhone.value, 
+                                    inputOfficeEmail.value, 
+                                    inputPrimaryFirstName.value, 
+                                    inputPrimaryLastName.value, 
+                                    inputPrimaryPhone.value, 
+                                    inputPrimaryEmail.value, 
+                                    inputDrugName.value, 
+                                    inputDosage.value,
+                                    inputDoses.value, 
+                                    inputDaysOfWeek.value,
+                                    inputTimes.value,
+                                    inputDosageUnit.value,
+                                    inputSubmitFirstName.value, 
+                                    inputSubmitLastName.value, 
+                                    inputSubmitEmail.value, 
+                                    inputSubmitPhone.value, 
+                                    inputSubmitOrganization.value])"
+                                class="btn btn-primary btn-xl" type="button" value="Submit">
+                        </div>
+                        <!--make the submit type button rereoute to account page-->
+                    </form>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                    <div>(833) 999-1003</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*******-->
+    <!-- Footer-->
+    <!--*******-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2021 - RemediChain</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
+<nav aria-label="breadcrumb">
+    <div class="fixed-top">
+    <ol class="breadcrumb">
+    
+        <li class="breadcrumb-item"><a href="account.html">Account</a></li>
+      <li class="breadcrumb-item active" aria-current="page">PatientRegistration</li>
+    </ol>
+    </div>
+  </nav>

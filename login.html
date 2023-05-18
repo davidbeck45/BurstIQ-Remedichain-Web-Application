@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>RemediChain | Login</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script>var exports = {};</script>
+
+    <script type="text/javascript" src="./js/hello-medications.js"></script>
+</head>
+    <body id="page-top">
+        
+        <!--****************-->
+        <!-- Navigation Bar -->
+        <!--****************-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="home.html">RemediChain</a> <!--Navigation Bar title-->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> <!--Navigation Bar-->
+                <div class="collapse navbar-collapse" id="navbarResponsive"> <!--Collapses the navigation bar if screen is small-->
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="home.html#about">About</a></li> <!--Scrolls down to About section-->
+                        <li class="nav-item"><a class="nav-link" href="home.html#howitworks">Learn More</a></li> <!--Scrolls down to Learn More section-->
+                        <li class="nav-item"><a class="nav-link" href="home.html#contact">Contact Us</a></li> <!--Scrolls down to Contact Us section-->
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login </a></li> <!--Links to login page-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--***************-->
+        <!--Login Area-->
+        <!--***************-->
+        <section class="page-section" id="Login">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Login</h2> <!--Title of Login page-->
+                        <hr class="divider" /> <!--Little green bar-->
+                        <p class="text-muted mb-5">To donate medication, become a patient, or view available inventory, please login</p> <!--Description-->
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <!--Centers the row-->
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" /> <!--Text field for Username-->
+                                <label for="inputEmail">Email Address</label> <!--Label for text field-->
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="inputPassword" type="password" placeholder="Enter your password..." /> <!--Text field for Dosage Strength-->
+                                <label for="inputPassword">Password</label> <!--Label for text field-->
+                            </div>
+                            <div class="d-grid">
+                                <!--changed from submit to button type-->
+                                <input onclick="loginRequest(inputEmail.value, inputPassword.value)" class="btn btn-primary btn-xl" type="button" value="Login">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                        <div>(833) 999-1003</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <!--*******-->
+        <!-- Footer-->
+        <!--*******-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - RemediChain</div></div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+<nav aria-label="breadcrumb">
+    <div class="fixed-top">
+    <ol class="breadcrumb">
+    
+      <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Login</li>
+    </ol>
+    </div>
+  </nav>

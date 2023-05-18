@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>RemediChain | My Account</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <script>var exports = {};</script>
+    <script type="text/javascript" src="./js/hello-medications.js"></script>
+</head>
+    <body id="page-top">
+        <!--****************-->
+        <!-- Navigation Bar -->
+        <!--****************-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="logged_in_home.html">RemediChain</a> <!--Navigation Bar title-->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> <!--Navigation Bar-->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <!--Collapses the navigation bar if screen is small-->
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="logged_in_home.html#about">About</a></li> <!--Scrolls down to About section-->
+                        <li class="nav-item"><a class="nav-link" href="logged_in_home.html#howitworks">Learn More</a></li> <!--Scrolls down to Learn More section-->
+                        <li class="nav-item"><a class="nav-link" href="logged_in_home.html#contact">Contact Us</a></li> <!--Scrolls down to Contact Us section-->
+                        <li class="nav-item"><a class="nav-link" href="account.html">My Account</a></li> <!--Links to account page-->
+                        <li class="nav-item"><a class="nav-link" href="home.html">Logout</a></li> <!--Links to login page-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--************-->
+        <!--Account Page-->
+        <!--************-->
+        <section class="page-section" id="Account">
+            <!--Name of this section-->
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <i class="bi-person-circle fs-2 mb-3 text-muted"></i> <!--account page icon-->
+                        <h2 class="mt-0">My Account</h2> <!--Title of Account page-->
+                        <hr class="divider" /> <!--Little green bar-->
+                    </div>
+                    <div class="btn-group" style="width:100%">
+                        <a href="donation.html" class="btn btn-primary btn-xl" style="width:20%">Make a Donation</a> <!--Donation Button-->
+                        <a href="patient.html" class="btn btn-primary btn-xl" style="width:20%">Request Medication</a> <!--Patient Button-->
+                        <!-- <a href="inventory.html" class="btn btn-primary btn-xl" style="width:20%">View Available Inventory</a>
+                        <a href="myMeds.html" class="btn btn-primary btn-xl" style="width:20%">View My Medication</a> Inventory Button -->
+                    </div>
+                </div>
+
+                <div class="spacer"></div> <!--Space between buttons and menu-->
+
+                <!-- <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6 text-center">
+                            <input onclick="pharmacistMedicationApproval()" class="btn btn-primary btn-xl" type="button" value="Pharmacist Approval Demo">
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="spacer"></div> <!--Space between buttons and menu-->
+
+                <!-- <button class="tablink" onclick="openPage('donatedAssets', this, '#067446')" id="defaultOpen">My Donations</button>
+                <button class="tablink" onclick="openPage('taxInfo', this, '#067446')">Tax Information</button> -->
+
+                <!-- <div id="donatedAssets" class="tabcontent tablefixhead">
+                    <table class="table table-striped table-hover"> -->
+                        <!--Makes the table striped and changes color when mouse hovers for easy reading-->
+                        <!-- <thead> -->
+                            <!--Header of the table-->
+                            <!-- <tr> -->
+                                <!-- <th scope="col">Donation Date</th> Title of the column -->
+                                <!-- <th scope="col"># of Donations</th> Title of the column -->
+                                <!-- <th scope="col">Total Value</th> Title of the column -->
+                            <!-- </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="taxInfo" class="tabcontent">
+                    <p>More information is coming soon!</p>
+                </div> -->
+
+            </div>
+</section>
+        <!--******************-->
+        <!--Javascript Section-->
+        <!--******************-->
+        <script>
+            function openPage(pageName, elmnt, color) {
+                // Hide all elements with class="tabcontent" by default */
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Remove the background color of all tablinks/buttons
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+
+                // Show the specific tab content
+                document.getElementById(pageName).style.display = "block";
+
+                // Add the specific color to the button used to open the tab content
+                elmnt.style.backgroundColor = color;
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+
+
+        <!--*******-->
+        <!-- Footer-->
+        <!--*******-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - RemediChain</div></div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+<nav aria-label="breadcrumb">
+    <div class="fixed-top">
+    <ol class="breadcrumb">
+    
+      <li class="breadcrumb-item active" aria-current="page">Account</li>
+    </ol>
+    </div>
+  </nav>
